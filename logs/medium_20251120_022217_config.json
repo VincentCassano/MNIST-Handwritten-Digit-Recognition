@@ -1,0 +1,41 @@
+{
+  "model_name": "medium",
+  "epochs": 30,
+  "batch_size": 128,
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "val_ratio": 0.1,
+  "patience": 5,
+  "save_dir": "D:\\VSC\\项目\\MNIST 人工智能项目\\models",
+  "log_dir": "D:\\VSC\\项目\\MNIST 人工智能项目\\logs",
+  "resume": null,
+  "use_mixed_precision": false,
+  "gradient_accumulation_steps": 1,
+  "warmup_epochs": 2,
+  "use_cosine_lr_scheduler": false,
+  "data_config": {
+    "batch_size": 128,
+    "num_workers": 4,
+    "pin_memory": true,
+    "rotation_degree": 10,
+    "translation": [
+      0.1,
+      0.1
+    ],
+    "scale_range": [
+      0.9,
+      1.1
+    ],
+    "crop_padding": 2,
+    "padding_mode": "edge",
+    "mean": [
+      0.1307
+    ],
+    "std": [
+      0.3081
+    ],
+    "add_noise": false,
+    "noise_std": 0.05,
+    "data_dir": "./data"
+  }
+}
